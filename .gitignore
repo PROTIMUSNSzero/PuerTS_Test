@@ -5,4 +5,5 @@ Logs/
 obj/
 Temp/
 ts/node_modules/
+tsLib/node_modules/
 .idea/

@@ -1,12 +1,12 @@
 {
-    // "files": [
-    //     "src/main.ts",
-    //     "src/greet.ts"
-    // ],
     "compilerOptions": {
-        "noImplicitAny": true,
-        "target": "es5"
+        "module": "amd",
+        "lib": ["dom", "es6"],
+        "target": "es6",
     },
+    "files": [
+        "src/libs/kunpo.d.ts"
+    ],
     "include":[
         "src"
     ]
