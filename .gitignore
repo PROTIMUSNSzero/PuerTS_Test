@@ -1,5 +1,8 @@
 #
 
 Library/
+Logs/
+obj/
+Temp/
 ts/node_modules/
 .idea/
