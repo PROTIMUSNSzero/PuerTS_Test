@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.tencent.puerts.core", "com.tencent.puerts.core.csproj", "{844bcc40-1609-b212-817c-15b3a343684e}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{662104a8-4ff4-d654-f5b5-3fd6b9a813d1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.tencent.puerts.core.Editor", "com.tencent.puerts.core.Editor.csproj", "{44a4363a-f817-06dd-8231-276ca5decc05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{fc4d7d6c-47d2-b655-4332-7c7baed104a7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{844bcc40-1609-b212-817c-15b3a343684e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844bcc40-1609-b212-817c-15b3a343684e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662104a8-4ff4-d654-f5b5-3fd6b9a813d1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662104a8-4ff4-d654-f5b5-3fd6b9a813d1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44a4363a-f817-06dd-8231-276ca5decc05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44a4363a-f817-06dd-8231-276ca5decc05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{fc4d7d6c-47d2-b655-4332-7c7baed104a7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fc4d7d6c-47d2-b655-4332-7c7baed104a7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

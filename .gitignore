@@ -1,2 +1,5 @@
-/Library,
-/ts/node_modules/,
+#
+
+Library/
+ts/node_modules/
+.idea/
