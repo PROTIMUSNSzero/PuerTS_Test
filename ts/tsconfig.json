@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "module": "amd",
+        "module": "CommonJS",
         "lib": ["dom", "es6"],
         "target": "es6",
     },

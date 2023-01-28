@@ -1,4 +1,5 @@
-var kunpo;
+global.kunpo = global.kunpo || {};
+
 (function (kunpo) {
     class HeapNode {
     }
@@ -163,7 +164,7 @@ var kunpo;
     }
     kunpo.Heap = Heap;
 })(kunpo || (kunpo = {}));
-var kunpo;
+
 (function (kunpo) {
     /**
      * 定时器节点
@@ -209,7 +210,7 @@ var kunpo;
     kunpo.TimerNode = TimerNode;
 })(kunpo || (kunpo = {}));
 /// <reference path="./TimerNode.ts"/>
-var kunpo;
+
 (function (kunpo) {
     const TimerIdBit = 20;
     const TimerCount = 1 << (32 - TimerIdBit);
@@ -327,7 +328,7 @@ var kunpo;
 })(kunpo || (kunpo = {}));
 /// <reference path="../Heap.ts"/>
 /// <reference path="./TimerNodePool.ts"/>
-var kunpo;
+
 (function (kunpo) {
     /**
      * 定时器

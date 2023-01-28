@@ -2,7 +2,9 @@
   "name": "tslib",
   "version": "1.0.0",
   "main": "main.ts",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-inject-string": "^1.1.2"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
