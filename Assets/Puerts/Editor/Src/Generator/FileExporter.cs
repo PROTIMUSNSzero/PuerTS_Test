@@ -52,7 +52,7 @@ namespace Puerts.Editor
                 {
                     jsEnv.UsingFunc<DTS.TypingGenInfo, bool, string>();
                     var typingRender = jsEnv.ExecuteModule<Func<DTS.TypingGenInfo, bool, string>>("puerts/templates/dts.tpl.mjs", "default");
-                    using (StreamWriter textWriter = new StreamWriter(saveTo + "Typing/csharp/index.d.ts", false, Encoding.UTF8))
+                    using (StreamWriter textWriter = new StreamWriter(saveTo + "unity.d.ts", false, Encoding.UTF8))
                     {
                         string fileContext = typingRender(DTS.TypingGenInfo.FromTypes(tsTypes), csharpModuleWillGen);
                         textWriter.Write(fileContext);

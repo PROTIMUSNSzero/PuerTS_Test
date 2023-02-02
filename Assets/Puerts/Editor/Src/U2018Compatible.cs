@@ -11,11 +11,11 @@ using System.Reflection;
 
 //1、配置类必须打[Configure]标签
 //2、必须放Editor目录
-[Configure]
+//[Configure]
 public class U2018Compatible
 {
 #if UNITY_2018_1_OR_NEWER
-    [Filter]
+    //[Filter]
     static Puerts.Editor.Generator.BindingMode Filter(MemberInfo memberInfo)
     {
         if (memberInfo.DeclaringType.IsGenericType && memberInfo.DeclaringType.GetGenericTypeDefinition() == typeof(Dictionary<,>))

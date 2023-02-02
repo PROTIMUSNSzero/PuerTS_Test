@@ -120,7 +120,7 @@ namespace Puerts.Editor
                         {
                             if ((bool)filter.Invoke(null, new object[] { mbi })) 
                             {
-                                mode = BindingMode.LazyBinding;
+                                mode = BindingMode.DontBinding;
                             }
                         }
                         else if (filter.ReturnType == typeof(BindingMode))

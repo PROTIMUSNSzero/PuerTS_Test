@@ -30,7 +30,8 @@ namespace Puerts.Editor
                 Directory.CreateDirectory(Path.Combine(saveTo, "Typing/csharp"));
 
                 FileExporter.ExportWrapper(saveTo);
-                FileExporter.ExportDTS(saveTo);
+                var dtsPath = UnityEngine.Application.dataPath + "/../ts/src/libs/";
+                FileExporter.ExportDTS(dtsPath);
                 Debug.Log("finished! use " + (DateTime.Now - start).TotalMilliseconds + " ms");
                 AssetDatabase.Refresh();
 

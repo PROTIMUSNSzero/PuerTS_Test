@@ -9,6 +9,7 @@
 
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 #if CSHARP_7_3_OR_NEWER
 using System.Threading.Tasks;
 #endif
@@ -244,6 +245,32 @@ namespace Puerts
             }
         }
 
+        public void ExecuteFile(string fileName)
+        {
+            string debugPath;
+            if (loader.FileExists(fileName))
+            {
+                var content = loader.ReadFile(fileName, out debugPath);
+                Eval(content);
+            }
+            else
+            {
+                Debug.LogError("file not found: " + fileName);
+            }
+        }
+
+        public T ExecuteFile<T>(string fileName)
+        {
+            string debugPath;
+            if (loader.FileExists(fileName))
+            {
+                var content = loader.ReadFile(fileName, out debugPath);
+                return Eval<T>(content);
+            }
+
+            return default(T);
+        }
+        
         /**
         * execute the module and get the result
         * when exportee is null, get the module namespace

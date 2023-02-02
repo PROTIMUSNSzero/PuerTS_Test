@@ -5,7 +5,9 @@
         "target": "es6",
     },
     "files": [
-        "src/libs/kunpo.d.ts"
+        "src/libs/kunpo.d.ts",
+        "src/libs/unity.d.ts",
+        "src/libs/puerts.d.ts",
     ],
     "include":[
         "src"

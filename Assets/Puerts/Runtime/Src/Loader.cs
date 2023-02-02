@@ -42,7 +42,7 @@ namespace Puerts
             return 
             // .cjs asset is only supported in unity2018+
 #if UNITY_2018_1_OR_NEWER
-            filepath.EndsWith(".cjs") || filepath.EndsWith(".mjs")  ? 
+             filepath.EndsWith(".js") ? filepath.Substring(0, filepath.Length - 3) : filepath.EndsWith(".cjs") || filepath.EndsWith(".mjs")  ? 
                 filepath.Substring(0, filepath.Length - 4) : 
 #endif
                 filepath;

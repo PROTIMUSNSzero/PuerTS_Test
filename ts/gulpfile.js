@@ -8,7 +8,8 @@ gulp.task("build", function () {
     gulp.task("display");
     return tsProject.src()
     .pipe(tsProject())
-    .js.pipe(inject.prepend("require('./libs/kunpo.js');\n"))
+    .js // .pipe(inject.prepend("require('./libs/kunpo.js');\n"))
+    .pipe(inject.replace(/Object.defineProperty\(exports,/, '// Object.defineProperty(exports,'))
     .pipe(gulp.dest("dist"));
 });
 
